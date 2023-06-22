@@ -1,0 +1,13 @@
+s = input()
+sz = len(s)
+palindrom = True
+for i in range(sz//2):
+    pr = sz - i - 1
+    if s[pr] != s[i]:
+        palindrom = False
+        break
+
+if palindrom:
+    print("True")
+else:
+    print("False")
